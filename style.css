@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@100&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: 'Saira Condensed', sans-serif;
+    background-color: black;
+    color: white;
+    text-transform: uppercase;
+    user-select: none;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+
+}
+.title{
+    font-size: 5rem;
+    font-weight: 300;
+}
+.time-now{
+    font-size: 3em;
+    letter-spacing: 0.2em;
+    text-indent: 0.2em;
+    font-weight: bolder;
+}
+
+.date-now{
+    font-size: 2em;
+    letter-spacing: 0.2em;
+    text-indent: 0.2em;
+    font-weight: bolder;
+
+}
+.inputs{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 1em 0;
+
+}
+.time-input, .day-input{
+    width: 49.5%;
+    font-size: large;
+    background-color: white;
+    color: black;
+    font-weight: bolder;
+}
+#submit{
+    width: 100%;
+    font-size: 2em;
+    font-weight: bolder;
+    transition: all 0.3s ease-in-out;
+    border-bottom: 2px solid white;
+    border-top: 2px solid white;
+    border-radius: 0.5em;
+
+}
+button,
+input {
+    cursor: pointer;
+    outline: none;
+    border: none;
+}
+
+#alarms {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-top: 2px solid white;
+    border-radius: 1em;
+
+}
+#submit:hover{
+    color: black;
+    background-color: grey;
+}
+
+label{
+    font-size: 2em;
+}
+
+
+/* JS ELEMENTS */
+.alarm-card {
+    overflow: hidden;
+    border-radius: 1em;
+    border-bottom: 2px solid white;
+    border-top: 2px solid white;
+    margin: 1em;
+    width: 70vw;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1em;
+}
+
+.card-top {
+    display: flex;
+    height: 70%;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.card-bottom {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+
+}
+
+.delete-button {
+    width: 10%;
+    height: 100%;
+    font-size: 120%;
+
+
+}
+
+.card-left {
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 80%;
+}
+
+.alarm-number {
+    font-size: 20px;
+}
+
+.alarm-time {
+    font-size: 20px;
+    width: 70%;
+    border-bottom: 2px solid grey;
+    font-weight: 900;
+
+}
+
+.ring-schedule {
+    font-size: 20px;
+}
+
+.ring {
+    font-size: 20px;
+}
+
+.snooze-options {
+    display: flex;
+    width: 100%;
+
+}
+
+.snooze-options>div {
+    border: 2px solid white;
+    display: inline-block;
+    width: 100%;
+    cursor: pointer;
+}

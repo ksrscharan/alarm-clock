@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+</head>
+
+<body>
+    <div class="container">
+        <div class="title">Alarms</div>
+        <div id="time-now">
+            <div class="time-now"></div>
+            <div class="date-now"></div>
+        </div>
+        <div class="inputs">
+            <div>
+                <input type="time" id="time-input" name="time" class="time-input" />
+                <select name="day" id="day-input" class="day-input">
+                    <option value="-" disabled selected>Week</option>
+                    <option value="0">Sunday</option>
+                    <option value="1">Monday</option>
+                    <option value="2">Tuesday</option>
+                    <option value="3">Wednesday</option>
+                    <option value="4">Thursday</option>
+                    <option value="5">Friday</option>
+                    <option value="6">Saturday</option>
+                </select>
+            </div>
+            <button id="submit" >Submit</button>
+        </div>
+        <div id="cards-container">
+
+        </div>
+    </div>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
